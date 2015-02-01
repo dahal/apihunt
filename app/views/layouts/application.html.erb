@@ -14,7 +14,11 @@
           <div class="container">
             <a href="#!" class="brand-logo">API Hunt</a>
             <ul class="side-nav">
-              <li><a href="#">Log in</a></li>
+              <% if current_user %>
+                <li><%= link_to current_user.name, "/signout" %></li>
+              <% else %>
+                <li><%= link_to "Sign in with Github", "/auth/github" %></li>
+              <% end %>
               <!-- <li><a href="#"><i class="small mdi-navigation-more-vert"></i></a></li> -->
               <li><a class="btn-floating btn-large waves-effect waves-light grey darken-3"><i class="mdi-content-add"></i></a></li>
             </ul>
