@@ -1,0 +1,6 @@
+Sat, 31 Jan 2015 15:48:23 -0800
+README.rdoc	Sat, 31 Jan 2015 15:43:17 -0800
+app/controllers/application_controller.rb	Sat, 31 Jan 2015 15:43:17 -0800
+app/controllers/testingthis_controller.rb	Sat, 31 Jan 2015 15:48:19 -0800
+app/helpers/application_helper.rb	Sat, 31 Jan 2015 15:43:17 -0800
+app/helpers/testingthis_helper.rb	Sat, 31 Jan 2015 15:48:19 -0800
