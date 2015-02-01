@@ -7,28 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
   <body>
-
-    <!-- Floating button-->
-    <div class="container">
-      <a class="btn-floating btn-large waves-effect waves-light grey darken-3 push-right"><i class="mdi-content-add"></i></a>
-      <%= yield %>
-    </div>
-
     <nav>
       <div class="nav-wrapper">
         <div class="container">
           <a href="#" class="brand-logo">API Hunt</a>
           <ul id="nav-mobile" class="right side-nav">
             <% if current_user %>
-            <div class="col s1">
-              <!-- <li><center><%#= image_tag(current_user.github_avatar, class: "navbar-image responsive-img circle", size: '40') %></center></li> -->
-              <li>
-                <center>
-                  <%= image_tag(current_user.github_avatar, class: "navbar-image responsive-img circle", size: '40') %>
-                </center>
-              </li>
-              <li><a class="waves-effect waves-light" href="/signout"><i class="mdi-action-settings-power"></i></a></li>
-            </div>
+              <center>
+                <li><%= image_tag(current_user.github_avatar, class: "navbar-image responsive-img circle", size: '40') %></li>
+                <li><a class="waves-effect waves-light" href="/signout">Logout</a></li>
+              </center>
             <% else %>
               <li><%= link_to "Sign in with Github", "/auth/github" %></li>
             <% end %>
@@ -41,6 +29,7 @@
 
       </div>
     </nav>
+    <%= yield %>
 
     <script type="text/javascript">
       $(".button-collapse").sideNav();
