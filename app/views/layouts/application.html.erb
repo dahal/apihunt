@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Apihunt</title>
+  <title>API Hunt</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="col s12">
+          <div class="container">
+            <a href="#!" class="brand-logo">API Hunt</a>
+            <ul class="side-nav">
+              <li><a href="#">Log in</a></li>
+              <!-- <li><a href="#"><i class="small mdi-navigation-more-vert"></i></a></li> -->
+              <li><a class="btn-floating btn-large waves-effect waves-light grey darken-3"><i class="mdi-content-add"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 
 <%= yield %>
 

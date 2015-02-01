@@ -1,2 +1,3 @@
-== Api Hunt
+Api Hunt
+---
 Product hunt for Api.
