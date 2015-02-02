@@ -20,7 +20,7 @@
 
   .card-title {
     color: #fff;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 300;
     &.activator {
       cursor: pointer;
@@ -28,7 +28,7 @@
   }
 
   a {
-    color: color("orange", "accent-2");
+    color: color("brown", "darken2");
     margin-right: $card-padding;
     @include transition(color .3s ease);
     text-transform: uppercase;

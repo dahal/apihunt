@@ -2,6 +2,7 @@ class ApisController < ApplicationController
   def index
     @api = Api.new
     @apis = Api.all
+    @apis = Api.all.includes(:user)
   end
 
   def create
