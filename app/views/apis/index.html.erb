@@ -1,0 +1,14 @@
+<%#= render 'navbar' %>
+<%= render 'hero' %>
+
+<% if current_user %>
+  <%= render 'form' %>
+<% else %>
+  <%= render 'sign_in_github' %>
+<% end %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });
+</script>

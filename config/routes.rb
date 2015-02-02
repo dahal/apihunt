@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  root 'apis#index'
+  resources :apis
 
   get "/auth/:provider/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", :as => :signout

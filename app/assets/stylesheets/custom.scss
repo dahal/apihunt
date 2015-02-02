@@ -2,12 +2,39 @@ nav ul li:hover, nav ul li.active {
   background-color: rgba(0, 0, 0, 0.0);
 }
 
-.navbar-image {
-  margin-top: 10px;
-}
-
 .push-right {
   margin-top: -20px;
   float: right;
   position: absolute;
+}
+
+.hero{
+  background-color:#53A976;
+  min-height: 200px;
+  margin-top: -30px;
+}
+
+.hero h2 {
+  color: white;
+  padding-top: 75px;
+}
+
+.hero p {
+  padding-bottom: 75px;
+  color: white;
+}
+
+.hero a{
+  color: white;
+}
+
+body {
+  padding: none;
+  margin: none;
+  height: 100%;
+  width: 100%;
+}
+
+.plus-position{
+  margin-top: -40px;
 }

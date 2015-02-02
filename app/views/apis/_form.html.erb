@@ -1,0 +1,39 @@
+<a class="waves-effect waves-circle waves-light btn-floating secondary-content push-right modal-trigger red lighten-2 plus-position" href="#modal1">
+  <i class="mdi-content-add"></i>
+</a>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="action-bar">
+    <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close"><i class="mdi-content-clear"></i></a>
+  </div>
+
+  <h5 class="center-align">Post a new API</h5>
+  <!-- Contents -->
+
+  <%= form_for @api do |f| %>
+    <div class="row">
+      <div class="input-field col s6">
+        <%= f.text_field :api_name %><br />
+        <%= f.label(:api_name, "API Name") %>
+      </div>
+
+      <div class="input-field col s6">
+        <%= f.text_field :api_doc_url %><br />
+        <%= f.label(:api_name, "Documentation URL") %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.text_area :api_tagline, class: 'materialize-textarea' %><br />
+        <%= f.label(:api_name, "Tagline") %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.button 'Submit', class: 'btn' %>
+      </div>
+    </div>
+  <% end %>
+</div>

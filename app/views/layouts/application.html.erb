@@ -1,34 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html class="full">
 <head>
   <title>API Hunt</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
   <body>
-    <nav>
-      <div class="nav-wrapper">
-        <div class="container">
-          <a href="#" class="brand-logo">API Hunt</a>
-          <ul id="nav-mobile" class="right side-nav">
-            <% if current_user %>
-              <center>
-                <li><%= image_tag(current_user.github_avatar, class: "navbar-image responsive-img circle", size: '40') %></li>
-                <li><a class="waves-effect waves-light" href="/signout">Logout</a></li>
-              </center>
-            <% else %>
-              <li><%= link_to "Sign in with Github", "/auth/github" %></li>
-            <% end %>
-          </ul>
 
-          <!-- Include this line below -->
-          <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
-          <!-- End -->
-        </div>
-
-      </div>
-    </nav>
     <%= yield %>
 
     <script type="text/javascript">
